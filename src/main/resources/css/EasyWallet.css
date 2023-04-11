@@ -1,0 +1,105 @@
+/*******************************************************************************
+*                                                                              *
+* Palette: 41508B, 6176A4, 4AA7B2, E6D8B3, EB934C                              *
+*                                                                              *
+*******************************************************************************/
+@import "colors.css";
+@import "borders.css";
+
+/*******************************************************************************
+*                                                                              *
+* EasyWallet                                                                   *
+*                                                                              *
+*******************************************************************************/
+
+.root {
+    -fx-background-color: -ew-primary-bg-color;
+    -fx-border-color: white;
+    -fx-border-width: 3 3 3 3;
+}
+
+.button {
+    -fx-border-radius: 0;
+    -fx-border-color: rgba(0, 0, 0, 0.33);
+    -fx-background-radius:  0;
+}
+
+.rounded {
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-border-width: 0;
+}
+
+.icon-button {
+    -fx-fill: -ew-neutral-gray-dark;
+    -fx-background-color: -ew-neutral-gray-light;
+}
+
+.primary-color {
+    -fx-background-color: -ew-primary-color;
+}
+
+.secondary-color {
+    -fx-background-color: -ew-secondary-color;
+}
+
+.primary-button {
+    -fx-background-color: -ew-primary-color;
+}
+
+.error {
+    -fx-background-color: white;
+    -fx-border-width: 2 0 2 0;
+    -fx-border-color: -ew-error-color;
+    -fx-margin: 3;
+}
+
+.error .label, .error .button {
+    -fx-text-fill: -ew-error-color;
+}
+
+.titled-pane {
+    -fx-background-color: white;
+}
+
+#btn_add_wallet {
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: white;
+}
+
+#btn_refresh {
+    -fx-border-width: 0 1 0 0;
+    -fx-border-color: white;
+}
+
+/*******************************************************************************
+*                                                                              *
+* MaterialFX                                                                   *
+*                                                                              *
+*******************************************************************************/
+.mfx-text-field, .mfx-radio-button {
+    -mfx-main: -ew-primary-color;
+}
+
+.mfx-dialog {
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-style: solid;
+}
+
+.mfx-button .mfx-ripple-generator {
+    -mfx-ripple-color: -ew-primary-color;
+}
+
+.primary-button .mfx-ripple-generator {
+    -mfx-ripple-color: white;
+}
+
+.mfx-dialog .actions-pane .mfx-button {
+    -fx-background-radius: 0;
+    -fx-pref-width: 75;
+}
+
+.mfx-text-field:invalid .floating-text {
+    -fx-text-fill: -mfx-red;
+}

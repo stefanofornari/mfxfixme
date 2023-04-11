@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+        <actionName>run</actionName>
+        <goals>
+            <goal>clean</goal>
+            <goal>javafx:run</goal>
+        </goals>
+        <properties>
+                <javafx.mainClass>${packageClassName}</javafx.mainClass>
+
+            </properties>
+    </action>
+    <action>
+        <actionName>jlink</actionName>
+        <goals>
+            <goal>clean</goal>
+            <goal>javafx:jlink</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>debug</actionName>
+        <goals>
+            <goal>clean</goal>
+            <goal>javafx:run@debug</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-package</actionName>
+        <displayName>package</displayName>
+        <goals>
+            <goal>package</goal>
+        </goals>
+        <properties>
+            <skipTests>true</skipTests>
+        </properties>
+    </action>
+    <action>
+            <actionName>run.single.main</actionName>
+            <packagings>
+                <packaging>*</packaging>
+            </packagings>
+            <goals>
+                <goal>javafx:run</goal>
+
+            </goals>
+            <properties>
+                <javafx.mainClass>${packageClassName}</javafx.mainClass>
+
+
+
+
+
+
+            </properties>
+        </action>
+</actions>
