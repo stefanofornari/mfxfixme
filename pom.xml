@@ -60,7 +60,7 @@
         <dependency>
             <groupId>io.github.palexdev</groupId>
             <artifactId>virtualizedfx</artifactId>
-            <version>11.8.3-SNAPSHOT</version>
+            <version>11.9.2</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.openjfx</groupId>
@@ -95,12 +95,22 @@
         <dependency>
             <groupId>io.github.palexdev</groupId>
             <artifactId>materialfx</artifactId>
-            <version>11.13.9</version>
+            <version>11.16.1</version>
         </dependency>
         <dependency>
             <groupId>io.github.palexdev</groupId>
             <artifactId>mfxcore</artifactId>
             <version>11.1.5</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.palexdev</groupId>
+            <artifactId>mfxresources</artifactId>
+            <version>11.3.3</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.palexdev</groupId>
+            <artifactId>mfxcomponents</artifactId>
+            <version>11.16.2</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
